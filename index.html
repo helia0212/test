@@ -4,9 +4,209 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  </style>
 </head>
 <body>
-  <p>Github Test page</p>
-  <img src="./img/bg.jpg" alt="/">
+  <!--헤더-->
+  <header>
+    <div class="logo">
+      <a href="./index.html"><img src="./img/main/logo_black.svg" alt="/"></a>
+    </div>
+    <ul>
+      <li>
+        <a href="#">브랜드</a>
+      </li>
+      <li>
+        <a href="#">캠페인</a>
+      </li>
+      <li>
+        <a href="#">스파</a>
+      </li>
+      <li>
+        <a href="#">매장안내</a>
+      </li>
+      <li>
+        <a href="#">B2B</a>
+      </li>
+    </ul>
+  </header>
+
+  <!--메인슬라이드-->
+  <main>
+    <div>
+      <div class="bakckground"></div>
+      <h1>
+        자연이 준 신선함,<br>
+        윤리로 완성한 뷰티.
+      </h1>
+    </div>
+  </main>
+  
+  <!--베스트 프로덕트-->
+  <div class="best">
+    <h1>
+      LUSH'S BEST
+    </h1>
+
+    <div class="product">
+      <div class="product1">
+        <img src="./img/main/product1.png" alt="/">
+        <p>
+          더티 보디 스프레이 200ml<br>
+          - 바디 스프레이/향수
+        </p>
+      </div>
+      <div class="product2">
+        <img src="./img/main/product2.png" alt="/">
+        <p>
+          마스크 오브 매그너민티 315g<br>
+          - 씻는 워시오프 팩 파워 마스크
+        </p>
+      </div>
+      <div class="product3">
+        <img src="./img/main/product3.png" alt="/">
+        <p>
+          러쉬 향좋은 바디 워시 클렌져<br>
+          슬리피 샤워 젤 260g
+        </p>
+      </div>
+      <div class="product4">
+        <img src="./img/main/product4.png" alt="/">
+        <p>
+          수퍼 밀크 100g - 컨디셔닝<br>
+          헤어 프라이머 에센스 퍼퓸 미스트
+        </p>
+      </div>
+    </div>
+    
+    <button><a href="#">BEST 상품 더 보러 가기</a></button>
+  </div>
+
+  <!--슬라이드2-->
+
+  <div class="slide2">
+    <div class="text">
+      <h1>
+      자연에서 온 비건뷰티
+      </h1>
+      <p>
+        러쉬는 자연에서 얻은 신선한 재료와 동물실험을<br>
+        하지 않는 정직한 재료를 사용하여<br>
+        모든 제품을 손으로 만듭니다.<br>
+        <br>
+        신선한 과일과 채소, 최상의 에센셜 오일,<br>
+        그리고 안전한 원료를 사용하여 효과적인 제품을<br>
+        만들 수 있다는 것을 믿습니다.
+      </p>
+    </div>
+    
+    <img src="./img/main/main2.png" alt="/">
+  </div>
+
+  <!--슬라이드3-->
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide VEGETARIAN">
+        <p>이념과 가치</p>
+        <h3>지속가능한 아름다움, 러쉬가 지켜가는 가치</h3>
+        <h1>VEGETARIAN</h1>
+        <p>
+          우리는 베지테리언 원료만을 선별하여 직접 제품을 만들고<br>
+          최소한의 포장과 보존제를 사용하며,<br>
+          고객에게 투명히 제조일자를 알리는 것이 옳다고 믿습니다.
+        </p>
+      </div>
+      <div class="swiper-slide ORGANIC">
+        <p>이념과 가치</p>
+        <h3>지속가능한 아름다움, 러쉬가 지켜가는 가치</h3>
+        <h1>ORGANIC</h1>
+        <p>
+          우리는 유기농 재료의 힘을 믿습니다.<br>
+          자연에서 얻은 원료는 피부에 순하고,<br>
+          지속 가능한 농법은 지구를 건강하게 지킵니다.<br>
+          가장 순수한 방식으로 아름다움을 완성합니다. 
+        </p>
+      </div>
+      <div class="swiper-slide ETHIC">
+        <p>이념과 가치</p>
+        <h3>지속가능한 아름다움, 러쉬가 지켜가는 가치</h3>
+        <h1>ETHIC</h1>
+        <p>
+          우리는 윤리를 기준으로 선택합니다.<br>
+          공정한 거래로 얻은 원료, 동물과 사람, 지구 모두를 존중하는 생산 방식,<br>
+          제품 하나하나에 우리가 지키고 싶은 가치를 담습니다.
+        </p>
+      </div>
+    </div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+
+
+
+
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       spaceBetween: 0,
+       centeredSlides: true,
+       autoplay: {
+         delay: 5000,
+         disableOnInteraction: false,
+       },
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
 </body>
 </html>
