@@ -1,4 +1,5 @@
 /*헤더*/
+
 header{
   width: 1440px;
   height: 100px;
@@ -22,6 +23,7 @@ header li:hover{
 }
 
 /*메인슬라이드*/
+
 main > .mainSlide{
   position: relative;
   width: 1920px;
@@ -40,10 +42,76 @@ main .background{
 main h1{
   position: absolute;
   left: 240px;
-  top: 250px;
+  top: 150px;
   color: #fff;
   z-index: 2;
   line-height: 150%;
   font-size: 3rem;
   font-weight: 700;
 }
+
+/*베스트 프로덕트*/
+
+.best{
+  width: 1720px;
+  padding-top: 148px;
+  padding-bottom: 70px;
+  border-radius: 70px;
+  background-color: #fafafa;
+  position: absolute;
+  top: 964px;
+  left: 100px;
+  z-index: 10;
+}
+.best > h1{
+  text-align: center;
+  font-size: 2.5rem; /*40px*/
+  font-family: "Gangwon Edu Power", "Noto Sans KR", sans-serif;
+  font-weight: 800;
+  margin-bottom: 49px;
+}
+.best > .product{
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.best > .product > .product1,
+.best > .product > .product2,
+.best > .product > .product3,
+.best > .product > .product4{
+  width:25%;
+  margin-right: 20px;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem; /*20px*/
+}
+.best > .product > .product4{
+  margin-right: 0;
+}
+.best > .product .innerBox{
+  /*width: 345px;
+  height: 400px;*/
+  background-color: #F5F5F5;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.best > button{
+  width: 300px;
+  height: 60px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 1rem; 
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+
+

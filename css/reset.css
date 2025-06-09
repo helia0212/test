@@ -17,4 +17,5 @@ a{
 }
 button{
   cursor: pointer;
+  all: unset; /*버튼 기본 초기화, 텍스트만 남김*/
 }
