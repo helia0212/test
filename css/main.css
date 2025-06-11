@@ -8,9 +8,7 @@ header{
   justify-content: space-between;
   align-items: center;
 }
-header > logo{
-  width: 30px;
-}
+
 header > ul{
   width: 662px;
   display: flex;
@@ -25,9 +23,8 @@ header li:hover{
 /*메인슬라이드*/
 
 main > .mainSlide{
-  position: relative;
-  width: 1920px;
-  height: 960px;
+  width: 100%;
+  height: 100vh;
 }
 main .background{
   width: 100%;
@@ -36,15 +33,12 @@ main .background{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
-  z-index: 1;
 }
 main h1{
   position: absolute;
   left: 240px;
-  top: 150px;
+  top: 255px;
   color: #fff;
-  z-index: 2;
   line-height: 150%;
   font-size: 3rem;
   font-weight: 700;
@@ -53,16 +47,12 @@ main h1{
 /*베스트 프로덕트*/
 
 .best{
-  width: 1720px;
+  width: 90%; /*1720px*/
+  margin: -96px auto 300px auto;
   padding-top: 109px;
   padding-bottom: 109px;
-  margin-bottom: 300px;
   border-radius: 70px;
   background-color: #fafafa;
-  position: absolute;
-  top: 964px;
-  left: 100px;
-  z-index: 10;
 }
 .best > h1{
   text-align: center;
@@ -72,7 +62,7 @@ main h1{
   margin-bottom: 49px;
 }
 .best > .product{
-  width: 1440px;
+  width: 75%; /*1440px*/
   margin: auto;
   margin-bottom: 107px;
   display: flex;
@@ -96,14 +86,14 @@ main h1{
 .best > .product .innerBox{
   margin-bottom: 20px;
 }
-.best > button{
-  width: 300px;
+.best > .button-link{
+  width: 17%; /*300px*/
   padding: 20px 44px;
   background-color: #000000;
   color: #ffffff;
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  font-size: 1rem; 
+  font-weight: 500;
+  font-size: 1.25rem; 
   display: block;
   margin: auto;
   text-align: center;
@@ -112,16 +102,119 @@ main h1{
 
 /*슬라이드2*/
 .slide2{
-  width: 1439px;
-  margin: auto;
+  width: 75%; /*~1439px*/
+  margin: 0 auto 300px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  font-family: "Noto Sans KR", sans-serif;
+}
+.slide2 > .text > h1{
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 53px;
+}
+.slide2 > .text > p{
+  font-weight: 500;
+  font-size: 1.25rem; /*20px*/
 }
 .slide2 > img{
-  width: 955px;
-  height: 637px;
+  width: 66%; /*~955px*/
 }
 
+/*슬라이드3*/
 
+/*html,
+body {
+  position: relative;
+  height: 100%;
+}*/
+
+.swiper {
+  width: 100%;
+  /*height: 100%;*/
+}
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 142px 0 227px 0; /*마주보는 것끼리 수치가 같으면 굳이 안써도 됨 ~ ex) 142px 0 227px*/
+}
+.swiper-slide > p:first-child{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem; /*18px*/
+}
+.swiper-slide > h3{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 2rem; /*32px*/
+  margin-bottom: 160px;
+}
+.swiper-slide > h1{
+  font-family: "Gangwon Edu Power", "Noto Sans KR", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem; /*40px*/
+  margin-bottom: 80px;
+}
+.swiper-slide > p:nth-child(2){
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem; /*18px*/
+  line-height: 160%;
+}
+.vegetarian{
+  background-image: url(../img/main/slide3_vegetarian.png);
+  background-repeat: no-repeat;
+} 
+.organic{
+  background-image: url(../img/main/slide3_organic.png);
+  background-repeat: no-repeat;
+} 
+.ethic{
+  background-image: url(../img/main/slide3_ethic.png);
+  background-repeat: no-repeat;
+} 
+
+/*슬라이드4*/
+.slider4{
+  width: 75%; /*~1439px*/
+  background-image: url(../img/main/map_LUSH.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 250px auto 762px auto;
+  display: flex;
+  gap: 47px;
+}
+.slider4 > .map{
+  padding-top: 164px;
+}
+/*.slider4 > .map > img{
+  padding-top: 164px;
+}*/
+.slider4 > .text{
+  margin-top: 423px;
+}
+.slider4 > .text > h1{
+  margin-bottom: 68px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 3rem; /*48px*/
+}
+.slider4 > .text > p{
+  margin-bottom: 82px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem; /*20px*/
+}
+.slider4 > .text > .button-link{
+  width: 17%; /*~243px*/
+  padding: 26px 66px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem; 
+}
