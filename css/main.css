@@ -194,9 +194,6 @@ body {
   padding-top: 140px;
   width: 500px;
 }
-/*.slider4 > .map > img{
-  padding-top: 164px;
-}*/
 .slider4 > .text{
   margin-top: 140px;
 }
@@ -220,4 +217,22 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem; 
+}
+
+/*푸터*/
+footer{
+  width: 100%;
+  padding: 86px 240px 86px 240px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Noto Sans KR", sans-serif;
+}
+footer > .inner{
+  display: flex;
+  justify-content: space-between; 
+}
+footer > .inner > .download{
+  width: 6.6%;
+  font-weight: 700;
+  font-size: 1rem;
 }
