@@ -185,7 +185,7 @@ body {
   background-image: url(../img/main/map_LUSH.png);
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 250px auto 762px auto;
+  margin: 250px auto 131px auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -232,7 +232,61 @@ footer > .inner{
   justify-content: space-between; 
 }
 footer > .inner > .download{
-  width: 6.6%;
+  width: 10%;
   font-weight: 700;
   font-size: 1rem;
+}
+footer > .inner > .download > h4,
+footer > .inner > .download > button{
+  margin-bottom: 16px;
+}
+footer > .inner > .email > .support{
+  margin-bottom: 30px;
+}
+footer > .inner > .email > .support > h4,
+footer > .inner > .email > .corporate > h4{
+  margin-bottom: 16px;
+}
+footer .inner .privatePolicy .policy {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* 항목 간격 */
+  margin-bottom: 20px;
+}
+
+footer .inner .privatePolicy .policy a {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  position: relative;
+}
+
+/* 각 항목 사이에 | 추가 */
+footer .inner .privatePolicy .box {
+  width: 1px;
+  height: 20px;
+  margin-left: 36px;
+  background-color: white;
+}
+
+footer .sns h4 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+footer .sns .footerIcon {
+  display: flex;               /* 가로 배치 */
+  gap: 20px;                   /* 아이콘 간격 */
+  align-items: center;
+}
+
+footer .sns .footerIcon a img {
+
+  padding: 8px;                /* 안쪽 여백 */
+  transition: transform 0.2s;
+}
+
+footer .sns .footerIcon a img:hover {
+  transform: scale(1.1);       /* 마우스 오버 시 살짝 확대 */
 }
